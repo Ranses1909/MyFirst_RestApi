@@ -11,7 +11,9 @@ const router = express.Router();
 router.post('/users', (req, res) => {
     // recibimos el objeto de la peticion que tiene un body
 const use = userSchema(req.body)
-user.save().then((data) => {res.json(data)})
+user.save()
+.then((data) => {res.json(data)})
+.catch((err) => res.json({message: err}))
 })
 
 
