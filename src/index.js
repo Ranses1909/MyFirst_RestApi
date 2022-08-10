@@ -9,6 +9,8 @@ const app = express();
 const port = process.env.PORT || 9000
 
 // middlewares
+// este middleware es para transformar el body requested to a javascript object
+app.use(express.json());
 app.use('/api', userRoutes);
 
 // PRIMERO SE ESCRIBE REQ, Y DESPUES RES MAMAGUEVOOOOOOOOOOOOOO

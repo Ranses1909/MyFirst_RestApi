@@ -10,11 +10,13 @@ const router = express.Router();
 // create users 
 router.post('/users', (req, res) => {
     // recibimos el objeto de la peticion que tiene un body
-const use = userSchema(req.body)
-user.save()
+const user = userSchema(req.body)
+user
+.save()
 .then((data) => {res.json(data)})
 .catch((err) => res.json({message: err}))
 })
 
 
+    
 module.exports = router;
