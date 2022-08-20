@@ -2,8 +2,34 @@ POST http://localhost:9000/api/users HTTP/1.1
 Content-type: application/json
 
 {
+"result": {
+        {
+          "description": "Fully Assembled Tiger 80 Keyboard With PBTfans™ Neon Keycaps",
+          "price": "$310.00",
+          "image": " //cdn.shopify.com/s/files/1/1473/3902/products/5_b7883e68-253c-4882-a8ef-6dd83ce9a78f_1728x.jpg?v=1658708622 1728w,"
+        },
+        {
+          "description": "Fully Assembled Tofu84 Hot-swap RGB Mechanical Keyboard With PBTfans WOB Base Keycaps",
+          "price": "$239.00",
+          "image": " //cdn.shopify.com/s/files/1/1473/3902/products/1_1ee2d712-ff6a-48a9-9bed-70fb8fa824e8_1728x.jpg?v=1658393768 1728w, "
+        },
+        }
+        }
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/62d81f30fd06b22a22883cb9 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/62d81f30fd06b22a22883cb9 HTTP/1.1
+Content-type: application/json
+
+{
     "name": "Ranses Canelon",
-    "profesion": "Programador Senior",
-    "age": "45",
-    "email": "nikola@gmail.com"
+    "age": "25",
+    "email": "canelonranses2@gmail.com"
 }
+
+###
+DELETE http://localhost:9000/api/users/62d81f30fd06b22a22883cb9 HTTP/1.1
