@@ -3,16 +3,16 @@ import React from 'react';
 
 import Navbar from './components/Navbar';
 import Presentation from './components/Presentation';
-import readyKeyboards from './components/ReadyKeyboards';
+import ReadyKeyboards from './components/ReadyKeyboards';
 // in order to let react know that is a componet use capital Case
 function App() {
 
     return (
         <>
         <Navbar />
-        <Presentation />,
+        <Presentation />
         <hr />
-        <readyKeyboards />
+        <ReadyKeyboards />
         </>
 
     )
