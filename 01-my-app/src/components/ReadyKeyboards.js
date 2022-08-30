@@ -9,8 +9,7 @@ const ReadyKeyboards = () => {
 const {readyToUse} = useGlobalContext();
   return (
     <div className="onsale">
-      {console.log(readyToUse)}
-
+{console.log(readyToUse)}
     </div>
   )
 }

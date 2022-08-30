@@ -13,7 +13,6 @@ React.useEffect(() => {
   }
   if(index < 0) {
       setIndex(lastIndex)
-      setIndex();
   }
 }, [index,imgInfo]);
 
