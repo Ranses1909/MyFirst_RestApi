@@ -4,6 +4,7 @@ import {BsFillArrowLeftSquareFill, BsFillArrowRightSquareFill} from 'react-icons
 
  export default function Presentation() {
 const [imgInfo, setImgInfow] = React.useState(data);
+// we use index state to rerender every time we press the arrow
 const [index, setIndex] = React.useState(0);
 
 React.useEffect(() => {
@@ -25,8 +26,12 @@ return(
      let position = 'nextSlide'
  if(KeyboardIndex === index ){
      position = 'activeSlide' }
+     
 // placing the previous item to the left and in case that index === 0 then we place the last item to the left
- if(KeyboardIndex  === index-1  || (index ===  0  && KeyboardIndex === imgInfo.length-1)){
+// 
+ if(
+    KeyboardIndex  === index-1 //esto es lo que hace que el lastSlide siempre este detras del activeSlide
+     || (index ===  0  && KeyboardIndex === imgInfo.length-1)){
      position = 'lastSlide'
  }
 //  the movement of every keyboards object depends on the css position 
@@ -37,10 +42,10 @@ return(
           </article>
       )
     })}
-    <div className="btn-wrapper">
+    {/* <div className="btn-wrapper"> */}
 <button className='prev' onClick={() => setIndex(index-1)}> <BsFillArrowLeftSquareFill className='prevArrow'/> </button>
 <button className='next' onClick={() => setIndex(index+1)} ><BsFillArrowRightSquareFill className='nextArrow'/>  </button>
-    </div>
+    {/* </div> */}
 </div>
 </section>
 )

@@ -1,35 +1,103 @@
 POST http://localhost:9000/api/users HTTP/1.1
 Content-type: application/json
+# be careful how you copy and paste the json
 
 {
-"result": {
-        {
-          "description": "Fully Assembled Tiger 80 Keyboard With PBTfans™ Neon Keycaps",
-          "price": "$310.00",
-          "image": " //cdn.shopify.com/s/files/1/1473/3902/products/5_b7883e68-253c-4882-a8ef-6dd83ce9a78f_1728x.jpg?v=1658708622 1728w,"
-        },
-        {
-          "description": "Fully Assembled Tofu84 Hot-swap RGB Mechanical Keyboard With PBTfans WOB Base Keycaps",
-          "price": "$239.00",
-          "image": " //cdn.shopify.com/s/files/1/1473/3902/products/1_1ee2d712-ff6a-48a9-9bed-70fb8fa824e8_1728x.jpg?v=1658393768 1728w, "
-        },
-        }
-        }
+ "arrayData":[
+   {
+      "description": "FULLY ASSEMBLED KBDPAD MARK II MECHANICAL KEYBOARD WITH PBTFANS TWIST NUMPAD KEYCAPS",
+      "price": "$99.00",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/5_be540a22-f6ca-4aab-90c4-6b9ed67f6d4e_1728x.jpg?v=1662531218 1728w 1728h,"
+   },
+   {
+      "description": "FULLY ASSEMBLED TOFU60 DZ64 RGB HOT-SWAP KEYBOARD WITH PBTFANS WOB BASE KEYCAPS",    
+      "price": "$194.00 ",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/2_56f9940e-88ab-4a76-8816-e41a8321899c_1728x.jpg?v=1658392388 1728w 1728h,"
+   },
+   {
+      "description": "FULLY ASSEMBLED TOFU65 HOT-SWAP KEYBOARD WITH PBTFANS WOB BASE KEYCAPS",
+      "price": "$200.00 ",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/1_1c379cb8-fed3-4e3c-859a-83658efb01e8_1728x.jpg?v=1658388251 1728w 1728h,"
+   },
+   {
+      "description": "FULLY ASSEMBLED TOFU65 HOT-SWAP KEYBOARD WITH PBTFANS BOW KEYCAPS",
+      "price": "$200.00 ",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/1_aa113da8-4b25-46cc-a289-ef5af127b448_1728x.jpg?v=1654159838 1728w 1728h,"
+   },
+   {
+      "description": "FULLY ASSEMBLED TOFU65 HOT-SWAP KEYBOARD WITH PBTFANS WOB SIMPLE BASE KEYCAPS",      
+      "price": "$200.00 ",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/8_8e15671f-8a12-4cf3-a1c4-8af15fc15e12_1728x.jpg?v=1654148808 1728w 1728h,"
+   },
+   {
+      "description": "FULLY ASSEMBLED KBD75 V3.1 HOT-SWAP KEYBOARD WITH OSA MARRS GREEN PBT DOUBLESHOT KEYCAPS",
+      "price": "$249.00 ",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/8_31fbecd0-080b-441c-930b-4dde3f65bc87_1728x.jpg?v=1651044067 1728w 1728h,"
+   },
+   {
+      "description": "FULLY ASSEMBLED TOFU65 HOT-SWAP MECHANICAL KEYBOARD WITH EPBT GREY-WHITE DOUBLESHOT KEYCAPS",
+      "price": "$159.00 ",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/13_0298f6be-43e5-4f12-b44e-b78b2bee79bb_1728x.jpg?v=1649393416 1728w 1728h,"
+   },
+   {
+      "description": "FULLY ASSEMBLED TOFU60 DZ60RGB-ANSI HOT-SWAP MECHANICAL KEYBOARD WITH BOW PBT KEYCAPS",
+      "price": "$159.00 ",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/4_8f0aa705-7ab7-47d3-8e0d-3420bb8ed967_1728x.jpg?v=1646902374 1728w 1728h,"
+   },
+   {
+      "description": "FULLY ASSEMBLED TOFU60 DZ60RGB V2 HOT-SWAP MECHANICAL KEYBOARD WITH BOW PBT KEYCAPS",      "price": "$159.00 ",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/6_6a6c4d3a-57c6-49ea-8005-3d3fd081b347_1728x.jpg?v=1646898407 1728w 1728h,"
+   },
+   {
+      "description": "FULLY ASSEMBLED TOFU65 ACRYLIC SOLDERED MECHANICAL KEYBOARD WITH BOW PBT KEYCAPS",   
+      "price": "$155.00 ",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/3_50dd02cc-3993-4807-bf1b-8389f76e69d0_1728x.jpg?v=1646468591 1728w 1728h,"
+   },
+   {
+      "description": "FULLY ASSEMBLED BLADE65 R2 HOT SWAP KEYBOARD WITH CEMENT GREY JAPANESE PBT KEYCAPS", 
+      "price": "$268.00 ",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/1_da22aa30-9cbc-44ce-9489-5991481dd42b_1728x.jpg?v=1646899482 1728w 1728h,"
+   },
+   {
+      "description": "FULLY ASSEMBLED TOFU65 HOT-SWAP MECHANICAL KEYBOARD WITH BOW PBT KEYCAPS",
+      "price": "$165.00 ",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/2_04861710-8445-462c-99e1-9f8895fdce57_1728x.jpg?v=1650337905 1728w 1728h,"
+   },
+   {
+      "description": "FULLY ASSEMBLED TOFU60 DZ60RGB ANSI MECHANICAL KEYBOARD WITH CEMENT GREY JAPANESE PBT KEYCAPS",
+      "price": "$149.00 ",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/4_49328f84-f3e9-427d-a245-02975d3cb4be_1728x.jpg?v=1644984776 1728w 1728h,"
+   },
+   {
+      "description": "FULLY ASSEMBLED TOFU65 MECHANICAL KEYBOARD WITH CEMENT GREY JAPANESE PBT KEYCAPS",   
+      "price": "$159.00 ",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/2_7d2f8109-4f19-496f-b900-f2dd7075e789_1728x.jpg?v=1645596805 1728w 1728h,"
+   },
+   {
+      "description": "FULLY ASSEMBLED KBDPAD MARK II SOLDERED MECHANICAL KEYBOARD PAD WITH NP PROFILE GREY&WHITE KEYCAPS",
+      "price": "$96.00",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/14_ffce27e1-a16e-4c02-af56-d921a9ea0f4b_1728x.jpg?v=1644389301 1728w 1728h,"
+   },
+   {
+      "description": "FULLY ASSEMBLED TOFU60 MECHANICAL KEYBOARD WITH CEMENT GREY JAPANESE PBT KEYCAPS",   
+      "price": "$149.00 ",
+      "img": "  //cdn.shopify.com/s/files/1/1473/3902/products/11_0c516a76-df37-4170-8cc0-3f9a02fbc648_1728x.jpg?v=1644976482 1728w 1728h,"
+   }
+ ]
+}
+
 ###
 GET http://localhost:9000/api/users HTTP/1.1
 
 ###
-GET http://localhost:9000/api/users/62fa6ff82026a51b93a690b4 HTTP/1.1
+GET http://localhost:9000/api/users/6386376ae66f3af195fccc75 HTTP/1.1
 
 ###
-PUT http://localhost:9000/api/users/62d81f30fd06b22a22883cb9 HTTP/1.1
+DELETE http://localhost:9000/api/users/6386319e6a06c22e81d0a542 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/63725cf30c6c1a08be5f4f53 HTTP/1.1
 Content-type: application/json
 
-{
-    "name": "Ranses Canelon",
-    "age": "25",
-    "email": "canelonranses2@gmail.com"
-}
 
 ###
-DELETE http://localhost:9000/api/users/62d81f30fd06b22a22883cb9 HTTP/1.1

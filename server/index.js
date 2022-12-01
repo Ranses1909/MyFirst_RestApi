@@ -18,8 +18,12 @@ app.use('/api', userRoutes);
 app.get('/', (req,res ) => {
     res.send('SIIIIIIIIIIUUUUUUUU')
 })
+
+
 // mongodb connection can return a promise...
-mongoose.connect(process.env.MONGODB_URI).then(() => console.log('Connected to MongoDB Atlas')).catch((error) => console.error(error))
+mongoose.connect(process.env.MONGODB_URI)
+.then(() => console.log('Connected to MongoDB Atlas'))
+.catch((error) => console.error(error))
 
 
 app.listen(port, ()=> console.log('listening on server', port))
