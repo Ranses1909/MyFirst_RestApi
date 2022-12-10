@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useGlobalContext } from '../context'
 // PLANS FOR NEXT DAY :  make a singleKeyboard page, and when i press buy it puts the keyboard in the cart.
 // figure out how to use react-router and if i will need methods for my api
 // https://www.mongodb.com/languages/mern-stack-tutorial

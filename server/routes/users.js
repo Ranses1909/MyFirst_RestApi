@@ -2,6 +2,7 @@
 
 // express tiene un constructor llamado router
 const express = require('express');
+const user = require('../models/user');
 const {arrayData } = require('../models/user');
 const userSchema = require('../models/user')
 const router = express.Router();
@@ -35,11 +36,12 @@ userSchema
 
 // get one user
 router.get('/users/:id', (req, res) => {
-    
+    // const query = UserSchema.find().then((data) => {res.json(data[0].arrayData)})
     // here we will fin the id we need, that id it's gonna be inside the params that come from the petition
     const { id } = req.params;
-   actualSchema
-        .findById(id)
+   userSchema
+   .find()
+        .where("_id").equals(id)
         .then((data) => {res.json(data)})
     .catch((err) => res.json({message: err}))
 })

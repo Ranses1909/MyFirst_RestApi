@@ -2,9 +2,8 @@ const mongoose = require('mongoose')
 const express = require('express')
 
 // Everything in Mongoose starts with a Schema. Each schema maps to a MongoDB collection and defines the shape of the documents within that collection.
-const userSchema = mongoose.Schema({
-      
-    arrayData:[
+const userSchema = mongoose.Schema(
+   [
          {
           id: {
             type: Number
@@ -19,9 +18,9 @@ const userSchema = mongoose.Schema({
             type: String,
             required: true,
         },
-        }
-      ]
-    })
+        }]
+      
+    )
 
 const userSchema2 = mongoose.Schema({
         description: {type: String,

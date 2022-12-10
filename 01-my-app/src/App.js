@@ -19,15 +19,15 @@ function App() {
       element: <Home/>,
       // errorElement: <ErrorPage />,
     },
-    {
-      path: "/users/:_id",
-      element: <Testing/>,
-      // errorElement: <ErrorPage />,
-    },
     // {
-    //   path: "details/:id",
-    //   element: <SingleKeyboard />,
+    //   path: "/details/:_id",
+    //   element: <Testing/>,
+    //   // errorElement: <ErrorPage />,
     // },
+    {
+      path: "details/:id",
+      element: <SingleKeyboard />,
+    },
   ]);
       return (
         <>

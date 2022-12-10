@@ -1,12 +1,16 @@
 import React from 'react'
 import ReadyKeyboards from '../components/ReadyKeyboards'
 import { useGlobalContext } from '../context';
+import Loading from './Loading'
 
 const KeyboardsList = () => {
-const {readyToUse}= useGlobalContext();
+const {readyToUse,loading}= useGlobalContext();
+if(loading){
+  return <Loading/>
+}
   return (
 <section className="keyboard-list" >
-  <h2>Ready to use</h2>
+  <h2 style={{color: 'black'}}>Ready to use</h2>
 <div className="list-container">
   {/* {console.log(readyToUse)} */}
 {readyToUse.map((item) =>{
